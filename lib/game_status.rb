@@ -43,7 +43,7 @@ end
 def winner(board)
   if won?(board)
     binding.pry
-    win = won?(board)
+    combo = won?(board)
     winner = win[0]
     binding.pry
       return winner
