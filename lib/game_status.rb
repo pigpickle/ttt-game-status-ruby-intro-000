@@ -42,11 +42,11 @@ end
 
 def winner(board)
   if won?(board)
-    binding.pry
+
     combo = won?(board)
-    binding.pry
+
     winner = board[combo[0]]
-    binding.pry
+
       return winner
   else
     return nil
