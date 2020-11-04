@@ -43,11 +43,9 @@ end
 def winner(board)
   if won?(board)
     binding.pry
-    WIN_COMBINATIONS.detect do |win_combination|
-      binding.pry
-      win = board[win_combination[0]]
-      binding.pry
-      return win
+    win = won?(board)
+    winner = win[0]
+      return winner
     end
   else
     return nil
